@@ -1,0 +1,40 @@
+.back-to-top{
+
+    position:fixed;
+
+    bottom:35px;
+
+    right:35px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#5b4337;
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+    transition:0.35s ease;
+
+}
+
+
+.back-to-top:hover{
+
+    background:#2f241f;
+
+    transform:translateY(-5px);
+
+}

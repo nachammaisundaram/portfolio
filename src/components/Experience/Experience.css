@@ -1,0 +1,111 @@
+.experience{
+
+    width:100%;
+
+    padding:120px 90px;
+
+}
+
+
+.experience-container{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+}
+
+
+.experience-title{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    color:#2f241f;
+
+    margin-bottom:40px;
+
+}
+
+
+.experience-content{
+
+    max-width:1100px;
+
+}
+
+
+.experience-content h3{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#2f241f;
+
+    margin-top:50px;
+
+    margin-bottom:8px;
+
+}
+
+
+.experience-content h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#5b4337;
+
+    margin-bottom:25px;
+
+}
+
+
+.experience-content p{
+
+    font-size:24px;
+
+    line-height:1.9;
+
+    font-weight:500;
+
+    color:#5b4337;
+
+    text-align:justify;
+
+    margin-bottom:20px;
+
+}
+
+.experience-date{
+
+    display:block;
+
+    margin:10px 0 22px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#8b6a57;
+
+}
+
+.experience-tech{
+
+    font-size:21px;
+
+    font-weight:650;
+
+    color:#5b4337;
+
+    margin-bottom:35px;
+
+}
+
+.experience-item{
+    margin-bottom:60px;
+}

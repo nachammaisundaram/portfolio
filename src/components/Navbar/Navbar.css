@@ -1,0 +1,246 @@
+.navbar{
+
+    width:90%;
+    max-width:1300px;
+    height:70px;
+
+    margin:25px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.22);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:90px;
+    height:70px;
+
+    overflow:hidden;
+
+}
+
+.logo-img{
+
+    height:58px;
+    width:auto;
+
+    display:block;
+    object-fit:contain;
+
+    transition:transform .35s ease;
+
+}
+
+.logo-img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.logo-img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+.nav-links li{
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+    transition:.3s;
+
+}
+
+.nav-links li:hover{
+
+    color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+.nav-links li a{
+
+    text-decoration:none;
+
+    color:#5b4337;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.nav-links li a:hover{
+
+    color:#2f241f;
+
+}
+
+/* ==========================
+   Large Laptop
+========================== */
+
+@media(max-width:1200px){
+
+.nav-links{
+
+gap:24px;
+
+}
+
+.nav-links li{
+
+font-size:19px;
+
+}
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media(max-width:992px){
+
+.navbar{
+
+width:95%;
+
+padding:0 22px;
+
+}
+
+.logo{
+
+font-size:28px;
+
+}
+
+.nav-links{
+
+gap:18px;
+
+}
+
+.nav-links li{
+
+font-size:17px;
+
+}
+
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media(max-width:768px){
+
+.navbar{
+
+height:auto;
+
+padding:18px;
+
+flex-direction:column;
+
+gap:16px;
+
+}
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:14px 20px;
+
+}
+
+.nav-links li{
+
+font-size:16px;
+
+}
+
+.logo{
+
+font-size:26px;
+
+}
+
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media(max-width:480px){
+
+.navbar{
+
+width:94%;
+
+padding:15px;
+
+}
+
+.nav-links{
+
+gap:12px 16px;
+
+}
+
+.nav-links li{
+
+font-size:15px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+}

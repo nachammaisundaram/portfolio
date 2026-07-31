@@ -1,0 +1,193 @@
+.contact {
+
+    width: 100%;
+    padding: 120px 90px 80px;
+
+}
+
+.contact-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.contact-title {
+
+    font-size: 72px;
+    font-weight: 800;
+    color: #2f241f;
+    margin-bottom: 50px;
+
+}
+
+.contact-content {
+
+    max-width: 1000px;
+
+}
+
+.contact-content h3 {
+
+    font-size: 42px;
+    font-weight: 800;
+    color: #2f241f;
+    margin-bottom: 25px;
+
+}
+
+.contact-content p {
+
+    font-size: 24px;
+    line-height: 1.9;
+    font-weight: 600;
+    color: #5b4337;
+
+    max-width: 900px;
+
+    margin-bottom: 45px;
+
+}
+
+/* ---------- Contact Buttons ---------- */
+
+.contact-links {
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    margin-bottom: 45px;
+
+}
+
+.contact-link-btn {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px 30px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(91, 67, 55, 0.15);
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #5b4337;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all 0.35s ease;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+
+}
+
+.contact-link-btn svg {
+
+    font-size: 21px;
+
+}
+
+.contact-link-btn:hover {
+
+    transform: translateY(-5px);
+
+    background: #5b4337;
+
+    color: #ffffff;
+
+    border-color: #5b4337;
+
+    box-shadow: 0 15px 30px rgba(91, 67, 55, 0.18);
+
+}
+
+/* ---------- Resume Button ---------- */
+
+.resume-btn {
+
+    display: inline-block;
+
+    padding: 18px 42px;
+
+    border-radius: 50px;
+
+    border: none;
+
+    background: #5b4337;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.35s ease;
+
+}
+
+.resume-btn:hover {
+
+    transform: translateY(-5px);
+
+    background: #2f241f;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+
+    .contact {
+
+        padding: 90px 25px 60px;
+
+    }
+
+    .contact-title {
+
+        font-size:clamp(42px,6vw,72px);
+
+    }
+
+    .contact-content h3 {
+
+        font-size: 30px;
+
+    }
+
+    .contact-content p {
+
+        font-size: 18px;
+
+    }
+
+    .contact-links {
+
+        flex-direction: column;
+
+    }
+
+    .contact-link-btn {
+
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .resume-btn {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+}

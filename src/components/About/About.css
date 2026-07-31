@@ -1,0 +1,38 @@
+.about{
+
+    width:100%;
+    padding:120px 90px;
+}
+
+.about-container{
+
+    max-width:1200px;
+
+    margin:0 auto;
+}
+
+.about-title{
+
+    font-size:clamp(42px,6vw,72px);
+
+    font-weight:800;
+
+    color:#2F241F;
+
+    margin-bottom:25px;
+}
+
+.about-content{
+
+    max-width:1100px;
+
+    font-size:24px;
+
+    line-height:2;
+
+    font-weight:500;
+
+    color:#2f241f;
+
+    text-align:justify;
+}
