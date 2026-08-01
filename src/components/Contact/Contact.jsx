@@ -55,7 +55,7 @@ function Contact() {
             </a>
 
             <a
-              href="linkedin.com/in/nachammai17"
+              href="https://www.linkedin.com/in/nachammai17/"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link-btn"
