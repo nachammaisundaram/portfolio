@@ -1,7 +1,6 @@
 import "./Hero.css";
 import { motion } from "framer-motion";
 import profile from "../../assets/images/nachammai_cutout.png";
-import wireframe from "../../assets/images/Background (1).png";
 
 function Hero() {
   return (
@@ -124,26 +123,10 @@ function Hero() {
           x: 0,
           opacity: 1,
           scale: 1,
-          y: [0, -12, 0],
         }}
         transition={{
-          x: {
             duration: 0.8,
             delay: 0.8,
-          },
-          opacity: {
-            duration: 0.8,
-            delay: 0.8,
-          },
-          scale: {
-            duration: 0.8,
-            delay: 0.8,
-          },
-          y: {
-            duration: 4,
-            repeat: Infinity,
-            ease: "easeInOut",
-          },
         }}
       >
 
@@ -154,17 +137,6 @@ function Hero() {
             alt="Nachammai S"
             className="profile-image normal"
           />
-
-          <img
-            src={wireframe}
-            alt="Wireframe"
-            className="profile-image wireframe"
-          />
-
-          <div className="tech-overlay">
-            <div className="scan-line"></div>
-            <div className="glitch-layer"></div>
-          </div>
 
         </div>
 
