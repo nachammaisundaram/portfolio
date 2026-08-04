@@ -6,21 +6,22 @@ function About() {
     <section className="about" id="about">
 
       <div className="about-container">
-
-        <motion.h2
-          className="about-title"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+          <motion.h2
+              className="about-title"
+              initial={{ opacity: 0, x: 80 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
+          >
           ABOUT ME
-        </motion.h2>
+          </motion.h2>
 
         <motion.p
-          className="about-content"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+         className="about-content"
+         initial={{ opacity: 0, x: 80 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         transition={{ duration: 0.8, delay: 0.2 }}
+         viewport={{ once: true }}
         >
           I am an MCA student with a growing interest in Artificial
           Intelligence, Cloud Computing and Software Engineering. I believe

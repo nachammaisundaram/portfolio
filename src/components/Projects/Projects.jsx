@@ -5,14 +5,11 @@ const projects = [
   {
     title: "TaskTrack",
     subtitle: "Full-Stack Task Management Application",
-    description:
-      "A full-stack task-tracking application built as my internship capstone project.",
     stack:
-      "FastAPI • React + Vite • MongoDB Atlas • Docker • GitHub Actions",
+      "React • FastAPI • MongoDB Atlas • Docker • GitHub Actions",
     highlights: [
-      "Containerized with Docker and deployed using a GitHub Actions CI/CD pipeline.",
-      "Backend deployed on Render and frontend deployed on Vercel.",
-      "Designed with a responsive React interface and RESTful FastAPI backend."
+       "Full-stack task tracker with secure auth, built on FastAPI + MongoDB.",
+       "Reduced ~6-7 manual deployment steps to a single git push, with GitHub Actions handling build, test, and deploy automatically."
     ],
     github: "https://github.com/nachammaisundaram/tasktrack",
     live: "https://tasktrack-one.vercel.app",
@@ -21,14 +18,11 @@ const projects = [
   {
     title: "CloudNova",
     subtitle: "End-to-End CI/CD Deployment Pipeline",
-    description:
-      "Designed and deployed a complete CI/CD pipeline for a company landing page as my final DevOps internship project.",
     stack:
-      "Git • GitHub • Jenkins • Docker • Vercel • Netlify",
+      "Git • Jenkins • Docker • Vercel • Netlify",
     highlights: [
-      "Implemented complete CI/CD workflow.",
-      "Automated build and deployment process.",
-      "Focused on deployment lifecycle and DevOps best practices."
+      "Built complete CI/CD pipeline from Git push to live deployment.",
+      "Reduced deployment time from ~10-15 min (manual) to 2-4 min using Jenkins + Docker automation."
     ],
     github: "https://github.com/nachammaisundaram/cloudnova",
     live: ""
@@ -37,14 +31,11 @@ const projects = [
   {
     title: "Medical Supply Chain Management System",
     subtitle: "Django Web Application",
-    description:
-      "A Django web application automating medicine supply chain operations between a central company, agencies and shops.",
     stack:
       "Django • SQLite • Chart.js",
     highlights: [
-      "Role-based dashboards for Admin, Agency and Shop.",
-      "Real-time analytics using Chart.js.",
-      "Improved supply tracking and order management."
+      "Django-based inventory system tracking medicine stock, orders, and expiry dates in real time.",
+      "Built ChartJs dashboards for stock-trend visualization, with automated low-stock alerts to reduce manual checking."
     ],
     github:
       "https://github.com/nachammaisundaram/Medical-Supply-Chain-Management",
@@ -54,14 +45,11 @@ const projects = [
   {
     title: "Predictive Maintenance of Industrial Machinery",
     subtitle: "IBM Cloud AI Project",
-    description:
-      "Machine learning solution developed using IBM Cloud and Watsonx.ai Studio to predict equipment failures before they occur.",
     stack:
       "IBM Cloud • Watsonx.ai • Machine Learning",
     highlights: [
-      "Prepared and analysed industrial datasets.",
-      "Built and evaluated predictive ML models.",
-      "Documented complete implementation workflow."
+      "Built an ML model on IBM Watson Studio to predict industrial machine failure from historical sensor data.",
+      "Covered the full workflow — data cleaning, feature engineering, model training, and evaluation."
     ],
     github:
       "https://github.com/nachammaisundaram/IBM-Cloud-Predictive-Maintenance-Project",
@@ -71,14 +59,12 @@ const projects = [
   {
     title: "E-Book & Audiobook Platform",
     subtitle: "Python Desktop Application",
-    description:
-      "Desktop application developed using Python and Tkinter to provide an accessible digital reading experience.",
     stack:
       "Python • Tkinter • Text-to-Speech",
     highlights: [
-      "Integrated PDF reader with bookmarking.",
-      "Built-in text-to-speech support.",
-      "Accessible and user-friendly interface."
+      "Desktop app converting e-books to audiobooks using Python + Text-to-Speech.",
+      "Desktop app converting e-books to audiobooks using Python + Text-to-Speech."
+      
     ],
     github:
       "https://github.com/nachammaisundaram/ebook-audiobook-platform",
@@ -107,6 +93,7 @@ function Projects() {
 
             <motion.div
               className="project-item"
+              style={{ height: "100%" }}
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}

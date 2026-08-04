@@ -9,7 +9,7 @@
 }
 
 .hero-left{
-    flex:1;
+    margin-left: 165px;
 }
 
 .hero-tag{
@@ -183,7 +183,7 @@ transform:translateX(-50%) translateY(0px);
     left: 50%;
     transform: translateX(-50%);
 
-    width: 620px;
+    width: 670px;
     height: auto;
     object-fit: contain;
 

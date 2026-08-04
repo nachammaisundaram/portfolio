@@ -1,14 +1,21 @@
 .about{
 
     width:100%;
-    padding:120px 90px;
+    padding:80px 90px 120px;
 }
 
 .about-container{
-
     max-width:1200px;
-
     margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+.about-content-wrapper{
+    width:650px;
+    margin-bottom:30px;
 }
 
 .about-title{
@@ -23,16 +30,10 @@
 }
 
 .about-content{
-
-    max-width:1100px;
+    width:100%;       /* <-- This is the important part */
+    max-width:1200px;
 
     font-size:24px;
-
     line-height:2;
-
-    font-weight:500;
-
-    color:#2f241f;
-
     text-align:justify;
 }

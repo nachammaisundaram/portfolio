@@ -1,10 +1,11 @@
+import blue from "../../assets/images/blue.png";
 import "./Skills.css";
 import { motion } from "framer-motion";
 
 const skills = [
   {
     category: "Programming Languages",
-    items: ["Python", "Java", "C", "C++", "JavaScript", "SQL"],
+    items: ["Python", "Java", "JavaScript"],
   },
   {
     category: "Frontend Development",
@@ -37,49 +38,68 @@ export default function Skills() {
     <section className="skills" id="skills">
       <div className="skills-container">
 
-        <motion.h2
-          className="skills-title"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          SKILLS
-        </motion.h2>
+        <div className="skills-layout">
 
-        <motion.p
-          className="skills-subtitle"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          A collection of technologies, tools and frameworks that I
-          continuously learn and apply while building modern software
-          solutions.
-        </motion.p>
+          {/* Left Image + Description below it */}
+          <motion.div
+            className="skills-image"
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <img src={blue} alt="Nachammai" />
 
-        <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <motion.div
-              key={index}
-              className="skill-group"
-              initial={{ opacity: 0, y: 30 }}
+            <motion.p
+              className="skills-subtitle"
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true, amount: 0.3 }}
             >
-              <h3>{skill.category}</h3>
+              A collection of technologies, tools and frameworks that I
+              continuously learn and apply while building modern software
+              solutions.
+            </motion.p>
+          </motion.div>
 
-              <div className="skill-list">
-                {skill.items.map((item) => (
-                  <span key={item}>{item}</span>
-                ))}
-              </div>
-            </motion.div>
-          ))}
+          {/* Right Content */}
+          <div className="skills-content">
+
+            <motion.h2
+              className="skills-title"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              SKILLS
+            </motion.h2>
+
+            <div className="skills-grid">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  className="skill-group"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <h3>{skill.category}</h3>
+
+                  <div className="skill-list">
+                    {skill.items.map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+          </div>
+
         </div>
-
       </div>
     </section>
   );

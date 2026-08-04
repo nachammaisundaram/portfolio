@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import logo from "../../assets/icons/logoo.png";
-import "./Navbar.css";
 
 function Navbar() {
   return (
@@ -21,10 +20,6 @@ function Navbar() {
         </li>
 
         <li>
-          <a href="#education">Education</a>
-        </li>
-
-        <li>
           <a href="#skills">Skills</a>
         </li>
 
@@ -34,6 +29,10 @@ function Navbar() {
 
         <li>
           <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#education">Education</a>
         </li>
 
         <li>

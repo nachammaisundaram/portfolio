@@ -4,6 +4,10 @@
 
     padding:120px 90px;
 
+    position:relative;
+
+    overflow:hidden;
+
 }
 
 
@@ -86,7 +90,7 @@
 
     margin:10px 0 22px;
 
-    font-size:18px;
+    font-size:23px;
 
     font-weight:700;
 
@@ -108,4 +112,34 @@
 
 .experience-item{
     margin-bottom:60px;
+}
+
+.experience-container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.experience-bg-image{
+
+    position:absolute;
+
+    right:150px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:700px;
+
+    opacity:0.20;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    z-index:1;
+
 }

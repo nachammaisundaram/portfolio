@@ -1,11 +1,57 @@
 .skills{
     width:100%;
-    padding:120px 90px;
+    padding:60px 90px 120px 90px;
 }
 
 .skills-container{
-    max-width:1200px;
+    max-width:1400px;
     margin:0 auto;
+}
+
+.skills-layout{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* LEFT IMAGE */
+
+.skills-image{
+    flex:0 0 680px;
+    display:flex;
+    flex-direction:column;      /* NEW: stack image and text vertically */
+    justify-content:flex-start;
+    align-items:flex-start;      /* CHANGED from flex-end */
+    margin-left:-120px;
+    margin-top:-100px;
+}
+
+.skills-image img{
+    width:100%;
+    max-width:640px;
+    height:auto;
+    object-fit:contain;
+
+    animation: skillsFloating 5s ease-in-out infinite;
+}
+.skills-subtitle{
+    max-width:560px;             /* CHANGED: fit under image width, not full content width */
+    font-size:16px;              /* CHANGED: smaller, since it's a caption now */
+    font-weight:600;
+    line-height:1.6;
+    color:#3B2E28;
+    margin-top:20px;             /* NEW: spacing from image */
+    margin-bottom:0;
+    margin-left:120px;           /* NEW: nudge right to offset the -120px image margin */
+}
+
+
+/* RIGHT CONTENT */
+
+.skills-content{
+    flex:1;
+    margin-top:-230px;
 }
 
 .skills-title{
@@ -16,54 +62,59 @@
 }
 
 .skills-subtitle{
-    max-width:950px;
-    font-size:26px;
+    max-width:1000px;        /* CHANGED: increased so bigger text still wraps to 2 lines */
+    font-size:30px;         /* CHANGED: increased from 17px — was too tiny */
     font-weight:600;
-    line-height:1.8;
+    line-height:1.6;
     color:#3B2E28;
-    margin-bottom:70px;
+    margin-top:40px;
+    margin-bottom:0;
+    margin-left:50px;
 }
 
 .skills-grid{
-
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:60px 80px;
-
 }
 
 .skill-group h3{
-
     font-size:28px;
     color:#2F241F;
     margin-bottom:18px;
     padding-bottom:10px;
     border-bottom:2px solid #2F241F;
-
 }
 
 .skill-list{
-
     display:flex;
     flex-wrap:wrap;
     gap:14px 20px;
-
 }
 
 .skill-list span{
-
     font-size:23px;
     font-weight:600;
     color:#4b3b33;
     cursor:pointer;
     transition:0.3s ease;
-
 }
 
 .skill-list span:hover{
-
     color:#2F241F;
-
     transform:translateY(-2px);
+}
 
+@keyframes skillsFloating{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
 }

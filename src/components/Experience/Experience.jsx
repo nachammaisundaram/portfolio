@@ -1,5 +1,6 @@
 import "./Experience.css";
 import { motion } from "framer-motion";
+import brownImage from "../../assets/images/brown.png";
 
 function Experience() {
 
@@ -51,6 +52,12 @@ function Experience() {
 
         <section className="experience" id="experience">
 
+                <img
+                   src={brownImage}
+                   alt=""
+                 className="experience-bg-image"
+                />
+
             <div className="experience-container">
 
                 <motion.h2
@@ -73,15 +80,16 @@ function Experience() {
                                 key={index}
                                 initial={{
                                     opacity: 0,
-                                    y: 40
+                                    x: index % 2 === 0 ? -80 : 80,
                                 }}
                                 whileInView={{
                                     opacity: 1,
-                                    y: 0
+                                    x: 0
                                 }}
                                 transition={{
-                                    duration: 0.6,
-                                    delay: index * 0.1
+                                        duration: 0.7,
+                                        ease: "easeOut",
+                                        delay: index * 0.15,
                                 }}
                                 viewport={{
                                     once: true
