@@ -215,3 +215,108 @@ transform:translateX(-50%) translateY(0px);
     will-change:transform;
 
 }
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1200px){
+
+.hero{
+    padding:60px 50px;
+    gap:30px;
+}
+
+.hero-left{
+    margin-left:0;
+}
+
+.hero-name{
+    font-size:64px;
+}
+
+.hero-title{
+    font-size:46px;
+}
+
+.hero-description{
+    font-size:20px;
+    max-width:550px;
+}
+
+.profile-container{
+    width:520px;
+    height:620px;
+}
+
+.profile-image{
+    width:500px;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.hero{
+    flex-direction:column-reverse;
+    justify-content:center;
+    text-align:center;
+    padding:40px 25px;
+    gap:20px;
+    min-height:auto;
+}
+
+.hero-left{
+    margin-left:0;
+}
+
+.hero-tag{
+    font-size:16px;
+    letter-spacing:3px;
+}
+
+.hero-name{
+    font-size:48px;
+}
+
+.hero-title{
+    font-size:34px;
+}
+
+.hero-roles{
+    justify-content:center;
+    font-size:17px;
+    gap:10px;
+}
+
+.hero-description{
+    font-size:17px;
+    max-width:100%;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:100%;
+    max-width:320px;
+    padding:16px 24px;
+}
+
+.profile-container{
+    width:340px;
+    height:400px;
+}
+
+.profile-image{
+    width:330px;
+}
+
+}

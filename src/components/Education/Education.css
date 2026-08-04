@@ -135,3 +135,88 @@
     color:#2F241F;
 
 }
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1200px){
+
+.education{
+    padding:8px 50px 100px;
+}
+
+.education-title{
+    font-size:56px;
+}
+
+.education-subtitle{
+    font-size:20px;
+    margin-bottom:50px;
+}
+
+.education-header h3{
+    font-size:28px;
+}
+
+.education-header h4,
+.education-header span{
+    font-size:20px;
+}
+
+.education-card p{
+    font-size:19px;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.education{
+    padding:50px 25px 70px;
+}
+
+.education-title{
+    font-size:36px;
+    text-align:center;
+}
+
+.education-subtitle{
+    font-size:17px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.education-card{
+    padding:25px;
+}
+
+.education-header{
+    flex-direction:column;
+    gap:10px;
+}
+
+.education-header h3{
+    font-size:24px;
+}
+
+.education-header h4,
+.education-header span{
+    font-size:17px;
+}
+
+.cgpa{
+    font-size:15px;
+    padding:8px 16px;
+}
+
+.education-card p{
+    font-size:16px;
+    line-height:1.7;
+}
+
+}

@@ -183,3 +183,117 @@
     background:#2f241f;
 
 }
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1200px){
+
+.projects{
+    padding:55px 50px 90px;
+}
+
+.projects-title{
+    font-size:56px;
+    margin-bottom:50px;
+}
+
+.projects-list{
+    gap:35px;
+}
+
+.project-item{
+    padding:28px;
+}
+
+.project-item h3{
+    font-size:32px;
+}
+
+.project-item h4{
+    font-size:20px;
+}
+
+.project-item p{
+    font-size:18px;
+}
+
+.project-stack{
+    font-size:18px;
+}
+
+.project-item li{
+    font-size:17px;
+}
+
+.project-buttons{
+    flex-wrap:wrap;
+}
+
+.project-buttons a{
+    padding:12px 24px;
+    font-size:16px;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.projects{
+    padding:50px 25px 70px;
+}
+
+.projects-title{
+    font-size:36px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.projects-list{
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.project-item{
+    padding:22px;
+}
+
+.project-item h3{
+    font-size:26px;
+}
+
+.project-item h4{
+    font-size:18px;
+}
+
+.project-item p{
+    font-size:16px;
+    line-height:1.7;
+}
+
+.project-stack{
+    font-size:16px;
+}
+
+.project-item li{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.project-buttons{
+    flex-direction:column;
+}
+
+.project-buttons a{
+    width:100%;
+    text-align:center;
+    padding:14px;
+    font-size:16px;
+}
+
+}

@@ -22,8 +22,9 @@
 }
 
 .contact-content {
-        width:100%;
-        max-width:1000px;
+
+    width: 100%;
+    max-width: 1000px;
 
 }
 
@@ -53,7 +54,6 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-
     margin-bottom: 45px;
 
 }
@@ -67,9 +67,7 @@
     padding: 16px 30px;
 
     background: #ffffff;
-
     border: 1px solid rgba(91, 67, 55, 0.15);
-
     border-radius: 50px;
 
     text-decoration: none;
@@ -96,9 +94,7 @@
     transform: translateY(-5px);
 
     background: #5b4337;
-
     color: #ffffff;
-
     border-color: #5b4337;
 
     box-shadow: 0 15px 30px rgba(91, 67, 55, 0.18);
@@ -118,11 +114,9 @@
     border: none;
 
     background: #5b4337;
-
     color: white;
 
     font-size: 18px;
-
     font-weight: 700;
 
     text-decoration: none;
@@ -139,52 +133,113 @@
 
 }
 
-/* ---------- Responsive ---------- */
+/* ===========================
+   TABLET
+=========================== */
 
-@media (max-width: 768px) {
+@media (max-width:1200px){
 
-    .contact {
+.contact{
 
-        padding: 90px 25px 60px;
+    padding:30px 50px 80px;
 
-    }
+}
 
-    .contact-title {
+.contact-title{
 
-        font-size:clamp(42px,6vw,72px);
+    font-size:56px;
 
-    }
+}
 
-    .contact-content h3 {
+.contact-content h3{
 
-        font-size: 30px;
+    font-size:34px;
 
-    }
+}
 
-    .contact-content p {
+.contact-content p{
 
-        font-size: 18px;
+    font-size:20px;
 
-    }
+}
 
-    .contact-links {
+.contact-link-btn{
 
-        flex-direction: column;
+    font-size:16px;
+    padding:14px 26px;
 
-    }
+}
 
-    .contact-link-btn {
+.resume-btn{
 
-        justify-content: center;
-        width: 100%;
+    padding:16px 36px;
+    font-size:16px;
 
-    }
+}
 
-    .resume-btn {
+}
 
-        width: 100%;
-        text-align: center;
+/* ===========================
+   MOBILE
+=========================== */
 
-    }
+@media (max-width:768px){
+
+.contact{
+
+    padding:50px 25px 70px;
+
+}
+
+.contact-title{
+
+    font-size:36px;
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.contact-content h3{
+
+    font-size:24px;
+    text-align:center;
+
+}
+
+.contact-content p{
+
+    font-size:16px;
+    line-height:1.7;
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.contact-links{
+
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.contact-link-btn{
+
+    justify-content:center;
+    width:100%;
+
+    font-size:16px;
+    padding:14px;
+
+}
+
+.resume-btn{
+
+    width:100%;
+    text-align:center;
+
+    font-size:16px;
+    padding:14px;
+
+}
 
 }

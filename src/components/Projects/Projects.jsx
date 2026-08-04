@@ -63,7 +63,7 @@ const projects = [
       "Python • Tkinter • Text-to-Speech",
     highlights: [
       "Desktop app converting e-books to audiobooks using Python + Text-to-Speech.",
-      "Desktop app converting e-books to audiobooks using Python + Text-to-Speech."
+      "Converted 100+ page digital books into audiobooks within minutes, improving accessibility and providing a seamless listening experience."
       
     ],
     github:

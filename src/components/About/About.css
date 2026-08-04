@@ -37,3 +37,51 @@
     line-height:2;
     text-align:justify;
 }
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width:1200px){
+
+.about{
+    padding:70px 50px 100px;
+}
+
+.about-title{
+    font-size:56px;
+}
+
+.about-content{
+    font-size:21px;
+    line-height:1.8;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+.about{
+    padding:50px 25px 70px;
+}
+
+.about-container{
+    align-items:center;
+}
+
+.about-title{
+    font-size:36px;
+    text-align:center;
+}
+
+.about-content{
+    font-size:17px;
+    line-height:1.8;
+    text-align:justify;
+}
+
+}
