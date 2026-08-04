@@ -2,7 +2,7 @@
 
     width:100%;
 
-    padding:120px 90px;
+    padding:60px 120px 90px;
 
     position:relative;
 
@@ -128,7 +128,7 @@
 
     right:150px;
 
-    top:50%;
+    top:40%;
 
     transform:translateY(-50%);
 
