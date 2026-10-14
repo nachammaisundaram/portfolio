@@ -4,28 +4,50 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
+    category: "Gen AI",
+    items: [
+      "LangChain",
+      "RAG",
+      "FAISS",
+      "Embeddings",
+      "Prompt Engineering",
+      "Gemini API",
+      "Streamlit",
+    ],
+  },
+  {
+    category: "Cloud & DevOps",
+    items: [
+      "Git",
+      "GitHub Actions",
+      "Jenkins",
+      "Docker",
+      "CI/CD",
+      "Vercel",
+      "Render",
+      "IBM Cloud",
+    ],
+  },
+  {
     category: "Programming Languages",
-    items: ["Python", "Java", "JavaScript"],
+    items: ["Python", "SQL", "JavaScript"],
+  },
+  {
+    category: "Backend & Databases",
+    items: ["FastAPI", "Django", "REST APIs", "MongoDB", "SQLite"],
+  },
+  {
+    category: "Machine Learning",
+    items: [
+      "Data Preprocessing",
+      "Feature Engineering",
+      "Model Evaluation",
+      "Watsonx.ai",
+    ],
   },
   {
     category: "Frontend Development",
     items: ["HTML5", "CSS3", "React", "Responsive Design"],
-  },
-  {
-    category: "Backend Development",
-    items: ["FastAPI", "Django", "REST APIs"],
-  },
-  {
-    category: "Databases",
-    items: ["MongoDB", "SQLite"],
-  },
-  {
-    category: "Cloud & DevOps",
-    items: ["IBM Cloud", "Docker", "Git", "GitHub", "GitHub Actions"],
-  },
-  {
-    category: "AI & Data",
-    items: ["Machine Learning", "Watsonx.ai", "Data Analysis"],
   },
   {
     category: "Tools",
@@ -37,9 +59,7 @@ export default function Skills() {
   return (
     <section className="skills" id="skills">
       <div className="skills-container">
-
         <div className="skills-layout">
-
           {/* Left Image + Description below it */}
           <motion.div
             className="skills-image"
@@ -65,7 +85,6 @@ export default function Skills() {
 
           {/* Right Content */}
           <div className="skills-content">
-
             <motion.h2
               className="skills-title"
               initial={{ opacity: 0, y: 40 }}
@@ -96,9 +115,7 @@ export default function Skills() {
                 </motion.div>
               ))}
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
